@@ -1,0 +1,9 @@
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.exe.config
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.exe
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.pdb
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.csprojResolveAssemblyReference.cache
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.Form1.resources
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.Properties.Resources.resources
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.csproj.GenerateResource.Cache
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.exe
+c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.pdb
