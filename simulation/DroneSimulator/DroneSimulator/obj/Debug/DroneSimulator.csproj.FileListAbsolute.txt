@@ -7,3 +7,12 @@ c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator
 c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.csproj.GenerateResource.Cache
 c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.exe
 c:\users\ash\documents\visual studio 2013\Projects\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.pdb
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.exe.config
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.exe
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.pdb
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.exe
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\bin\Debug\DroneSimulator.pdb
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.csprojResolveAssemblyReference.cache
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.Form1.resources
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.Properties.Resources.resources
+C:\Users\AbdulRahman\Documents\GitHub\InnovationNation2014\simulation\DroneSimulator\DroneSimulator\obj\Debug\DroneSimulator.csproj.GenerateResource.Cache
