@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DroneInstructions.Properties
+namespace DroneApplication.Properties
 {
 
 
