@@ -1,7 +1,0 @@
-Starting_Position_X=200
-Starting_Position_Y=200
-Random_Environment=True
-Random_Rate=2
-X_Reactive_Rate=0.05
-Y_Reactive_Rate=0.2
-CPU_Clock_Speed=100
