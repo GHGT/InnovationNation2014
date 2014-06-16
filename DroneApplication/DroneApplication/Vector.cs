@@ -46,7 +46,7 @@ namespace DroneApplication
                    instruc[0] = left;
                    break;
                default:
-                   instruc[0] = noCommand;
+                   instruc[0] = right;
                    break;
            }
 
@@ -63,7 +63,7 @@ namespace DroneApplication
                    instruc[1] = down;
                    break;
                default:
-                   instruc[1] = noCommand;
+                   instruc[1] = up;
                    break;
            }
            return instruc;

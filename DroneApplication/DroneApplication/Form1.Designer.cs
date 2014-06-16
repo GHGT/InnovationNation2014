@@ -28,34 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStartanalysis = new System.Windows.Forms.Button();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.txtOutput = new System.Windows.Forms.TextBox();
+            this.btnTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnStartanalysis
             // 
-            this.button1.Location = new System.Drawing.Point(327, 430);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Start Listener";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStartanalysis.Location = new System.Drawing.Point(201, 335);
+            this.btnStartanalysis.Name = "btnStartanalysis";
+            this.btnStartanalysis.Size = new System.Drawing.Size(113, 23);
+            this.btnStartanalysis.TabIndex = 0;
+            this.btnStartanalysis.Text = "Start Listener";
+            this.btnStartanalysis.UseVisualStyleBackColor = true;
+            this.btnStartanalysis.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(12, 12);
+            this.txtInput.Multiline = true;
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(505, 141);
+            this.txtInput.TabIndex = 1;
+            // 
+            // txtOutput
+            // 
+            this.txtOutput.Location = new System.Drawing.Point(12, 188);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.Size = new System.Drawing.Size(505, 141);
+            this.txtOutput.TabIndex = 2;
+            // 
+            // btnTest
+            // 
+            this.btnTest.Location = new System.Drawing.Point(201, 159);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(113, 23);
+            this.btnTest.TabIndex = 3;
+            this.btnTest.Text = "Test";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 482);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(527, 365);
+            this.Controls.Add(this.btnTest);
+            this.Controls.Add(this.txtOutput);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.btnStartanalysis);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStartanalysis;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.TextBox txtOutput;
+        private System.Windows.Forms.Button btnTest;
     }
 }
 
