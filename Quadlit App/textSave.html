@@ -1,0 +1,154 @@
+<canvas id="canvas" width=400 height=400></canvas>
+<br>
+    <button id="render">Redraw points</button>
+    <div id="coords"></div> <!--data coordinates saved in this div  -->
+    
+<style type="text/css">
+	  body {
+		margin:0px;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+        /* prevent text selection on ui */
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        /* prevent scrolling in windows phone */
+        -ms-touch-action: none;
+	  }
+	  #content {
+        overflow:hidden;
+		background-color:#ddd;
+	  }
+	  #canvas{
+		cursor:crosshair ;
+        background-color:#000;
+	  }
+	  .palette-case {
+		width:260px;
+		margin:auto;
+		text-align:center;
+	  }
+	  .palette-box {
+		float:left;
+		padding:2px 6px 2px 6px;
+	  }
+	  .palette {
+		border:2px solid #777;
+		height:36px;
+		width:36px;
+	  }
+	  .red{
+		background-color:#c22;
+	  }
+	  .blue{
+		background-color:#22c;
+	  }
+	  .green{
+		background-color:#2c2;
+	  }
+	  .white{
+		background-color:#fff;
+	  }
+	  .yellow{
+		background-color:#FFFF00;
+		border:2px dashed #fff;
+	  }
+      #tiltHelp {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 4px;
+        width: 160px;
+        background-color: #ffa;
+        color: #222;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 4px;
+        padding: 6px;
+        box-shadow:  0 0 3px 1px #888;
+      }
+    </style>
+
+<script>
+function onDeviceReady() {
+    navigator.splashscreen.hide();
+	newCanvas();
+	
+	// accelerometer triggers
+    startWatch();
+    
+}
+var ctx, color = "#fff", x = 0, y = 0, z = 0, tilt = 0;	
+
+
+
+var ctx = canvas.getContext('2d'),
+    points = [],
+    isDown = false,
+    prevX, prevY;
+
+
+	
+canvas.onmousedown = function(e) {
+    var pos = getXY(e);
+    
+    prevX = pos.x;
+    prevY = pos.y;
+    
+    /// add new stroke
+    points.push([]);
+    
+    /// record point in this stroke
+    points[points.length - 1].push([pos.x, pos.y]);
+    
+    isDown = true;
+}
+
+canvas.onmousemove = function(e) {
+    
+    if (!isDown) return;
+    
+    var pos = getXY(e);
+    
+    ctx.beginPath();
+    ctx.moveTo(prevX, prevY);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+
+    prevX = pos.x;
+    prevY = pos.y;
+    
+    points[points.length - 1].push([pos.x, pos.y]);
+}
+canvas.onmouseup = function() {
+    isDown = false;
+    coords.innerHTML = JSON.stringify(points);
+}
+function getXY(e) {
+    var r = canvas.getBoundingClientRect();
+    return {x: e.clientX - r.left, y: e.clientY - r.top}
+}
+
+render.onclick = function() {renderPoints(points);}
+
+function renderPoints(points) {
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = '#f00';
+    
+    /// get a stroke
+    for(var i = 0, t, p, pts; pts = points[i]; i++) {
+        
+        /// render stroke
+        ctx.beginPath();
+        ctx.moveTo(pts[0][0], pts[0][1]);
+        for(t = 1; p =pts[t]; t++) {
+            ctx.lineTo(p[0], p[1]);
+        }
+        ctx.stroke();
+    }
+    ctx.strokeStyle = '#fff';
+}
+</script>
